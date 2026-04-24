@@ -1,0 +1,77 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Syne', 'system-ui', 'sans-serif'],
+        body: ['DM Sans', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        violet: {
+          50: '#f5f3ff',
+          100: '#ede9fe',
+          200: '#ddd6fe',
+          300: '#c4b5fd',
+          400: '#a78bfa',
+          500: '#8b5cf6',
+          600: '#7c3aed',
+          700: '#6d28d9',
+          800: '#5b21b6',
+          900: '#4c1d95',
+          950: '#2e1065',
+        },
+        gold: {
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+        },
+        obs: {
+          50:  '#e8e8f5',
+          100: '#c8c8e0',
+          200: '#9898b8',
+          300: '#6b6b8a',
+          400: '#4a4a6a',
+          500: '#2a2a4a',
+          600: '#1a1a30',
+          700: '#111120',
+          800: '#0e0e1a',
+          900: '#080810',
+          950: '#040408',
+        },
+      },
+      borderRadius: {
+        '2xl': '16px',
+        '3xl': '20px',
+        '4xl': '24px',
+      },
+      boxShadow: {
+        card:   '0 0 0 1px rgba(139,92,246,0.08), 0 24px 64px rgba(0,0,0,0.5)',
+        glow:   '0 0 40px rgba(139,92,246,0.2)',
+        'glow-sm': '0 0 20px rgba(139,92,246,0.15)',
+        hot:    '0 0 30px rgba(239,68,68,0.2)',
+        gold:   '0 0 30px rgba(245,158,11,0.2)',
+        violet: '0 4px 20px rgba(124,58,237,0.35)',
+        'violet-lg': '0 8px 40px rgba(124,58,237,0.4)',
+      },
+      backgroundImage: {
+        'violet-glow': 'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(109,40,217,0.22), transparent)',
+        'card-sheen': 'linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 60%)',
+        'shimmer': 'linear-gradient(90deg, transparent 0%, rgba(139,92,246,0.08) 50%, transparent 100%)',
+      },
+      animation: {
+        'fade-up':    'fade-up 0.4s ease both',
+        'fade-in':    'fade-in 0.3s ease both',
+        'slide-down': 'slide-down 0.2s ease both',
+        'count-up':   'count-up 0.5s cubic-bezier(0.34,1.56,0.64,1) both',
+        'pulse-ring': 'pulse-ring 2s infinite',
+        'glow-pulse': 'glow-pulse 2.5s ease-in-out infinite',
+        'shimmer':    'shimmer 1.8s ease-in-out infinite',
+        'progress':   'progress-fill 0.8s ease-out both',
+      },
+    },
+  },
+  plugins: [],
+}
